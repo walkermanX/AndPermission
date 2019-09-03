@@ -1,8 +1,7 @@
-apply plugin: rootProject.ext.plugins.library
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -13,8 +12,6 @@ android {
 }
 
 dependencies {
-    compile rootProject.ext.dependencies.appCompat
-    compile rootProject.ext.dependencies.alertDialog
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.android.supportLibVersion}"
+    api 'com.yanzhenjie.alertdialog:alertdialog:1.0.1'
 }
-
-apply from: "https://github.com/yanzhenjie/bintray/blob/master/maven.gradle?raw=true"

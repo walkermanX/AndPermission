@@ -15,7 +15,7 @@
     limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.yanzhenjie.permission.sample">
+          package="com.walkermanx.permission.sample">
 
     <uses-permission android:name="android.permission.READ_CALENDAR"/>
     <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
@@ -56,7 +56,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.walkermanx.permission.sample.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -66,20 +66,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AnnotationActivity"
+            android:name="com.walkermanx.permission.sample.AnnotationActivity"
             android:label="@string/title_annotation_request"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".RationaleActivity"
+            android:name="com.walkermanx.permission.sample.RationaleActivity"
             android:label="@string/title_rationale_request"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".ListenerActivity"
+            android:name="com.walkermanx.permission.sample.ListenerActivity"
             android:label="@string/title_listener_request"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".AnyWhereActivity"
+            android:name="com.walkermanx.permission.sample.AnyWhereActivity"
             android:label="@string/title_other_request"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>

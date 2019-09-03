@@ -15,11 +15,11 @@
     limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.yanzhenjie.permission">
+          package="com.walkermanx.permission">
 
     <application>
         <activity
-            android:name=".PermissionActivity"
+            android:name="com.walkermanx.permission.PermissionActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="standard"
             android:theme="@style/permission_PermissionActivity"
